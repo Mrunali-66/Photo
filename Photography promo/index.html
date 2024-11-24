@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lens Life Photography</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Lens Life Photography</h1>
+            <p>Capturing life's precious moments, one frame at a time</p>
+            <button class="cta-button" onclick="scrollToContact()">Book a Session</button>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <h2>Our Portfolio</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="./Images/photo1.jpg" alt="Photography 1">
+            </div>
+            <div class="gallery-item">
+                <img src="./Images/photo2.jpg" alt="Photography 2">
+            </div>
+            <div class="gallery-item">
+                <img src="./Images/photo3.jpg" alt="Photography 3">
+            </div>
+            <div class="gallery-item">
+                <img src="./Images/photo4.jpg" alt="Photography 4">
+            </div>
+            <div class="gallery-item">
+                <img src="./Images/photo5.jpg" alt="Photography 5">
+            </div>
+            <div class="gallery-item">
+                <img src="./Images/photo6.jpg" alt="Photography 6">
+            </div>
+            <div class="gallery-item">
+                <img src="./Images/photo7.jpg" alt="Photography 7">
+            </div>
+            <div class="gallery-item">
+                <img src="./Images/photo8.jpg" alt="Photography 8">
+            </div>
+            <div class="gallery-item">
+                <img src="./Images/photo9.jpg" alt="Photography 9">
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" required></textarea>
+            </div>
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Lens Life Photography. All rights reserved.</p>
+    </footer>
+
+    <script src="index.js">   
+    </script>
+</body>
+</html>
